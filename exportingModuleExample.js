@@ -1,4 +1,4 @@
-let count = 0
+let count = 0;
 
 const inc = () => ++count;
 const dec = () => --count;
