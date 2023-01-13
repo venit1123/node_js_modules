@@ -24,4 +24,19 @@ emitter.on("Custume Event Example", (user, message) => {
     Returns: <boolean>
 */
 
-emitter.emit("Custume Event Example", "Itzel", "Hello World!!")
+// emitter.emit("Custume Event Example", "Itzel", "Hello World!!");
+
+
+/*
+    EXAMPLE #2:
+*/
+
+process.stdin.on("data", (data) =>{
+    const input = data.toString().trim();
+
+    if(input.toLowerCase() === "exit"){
+        emitter.emit("Custume Event Example", "process", "Thank you, goodbye!");
+        process.exit()
+    }
+    emitter.emit("Custume Event Example", "Terminal", input);
+});
