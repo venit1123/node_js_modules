@@ -5,6 +5,7 @@ Project practicing Node.js Modules
 - readline
 - events
 - path
+- fs (File systen)
 - creating my own module
 
 ### Node.js Documentation
